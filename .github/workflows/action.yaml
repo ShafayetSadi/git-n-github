@@ -1,4 +1,4 @@
-name: Basic GitHub Action
+name: Basic GitHub Actions
 on:
   push:
     branch: main
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Read & Output hello.txt
         run: |
