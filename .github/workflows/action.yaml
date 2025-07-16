@@ -1,0 +1,16 @@
+name: Basic GitHub Action
+on:
+  push:
+    branch: main
+
+jobs:
+  read-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+      - users: actions/checkout@v4
+
+      - name: Read & Output hello.txt
+        run: |
+          echo "hello.txt contains:"
+          cat hello.txt
