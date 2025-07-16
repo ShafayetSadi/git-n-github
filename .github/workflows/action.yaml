@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-      - users: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Read & Output hello.txt
         run: |
